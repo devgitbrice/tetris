@@ -118,7 +118,7 @@ export default function Tetris() {
               <p className="text-2xl font-mono">{rowsCleared}</p>
             </div>
           )}
-          <button onClick={startGame} className="p-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-lg font-bold hover:scale-105 transition-transform">
+          <button onClick={startGame} className="p-4 bg-gradient-to-r from-red-600 to-red-400 rounded-lg font-bold hover:scale-105 transition-transform">
             {gameOver ? 'Rejouer' : 'Start Game'}
           </button>
         </div>
