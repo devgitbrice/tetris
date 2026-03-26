@@ -109,16 +109,16 @@ export default function Tetris() {
             )}
           </div>
         </div>
-        <div className="flex flex-col gap-4 text-white w-48">
+        <div className="flex flex-col gap-4 text-red-600 w-48">
           {gameOver ? (
             <div className="p-4 bg-red-600 rounded-lg text-center font-bold animate-pulse">GAME OVER</div>
           ) : (
             <div className="p-4 bg-gray-800 rounded-lg">
-              <p className="text-gray-400 text-sm">Lignes</p>
+              <p className="text-red-400 text-sm">Lignes</p>
               <p className="text-2xl font-mono">{rowsCleared}</p>
             </div>
           )}
-          <button onClick={startGame} className="p-4 bg-gradient-to-r from-red-600 to-red-400 rounded-lg font-bold hover:scale-105 transition-transform">
+          <button onClick={startGame} className="p-4 bg-gradient-to-r from-green-600 to-green-400 rounded-lg font-bold hover:scale-105 transition-transform">
             {gameOver ? 'Rejouer' : 'Start Game'}
           </button>
         </div>

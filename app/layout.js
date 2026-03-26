@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       {/* "h-screen" et "overflow-hidden" pour que l'app prenne toute la fenêtre sans scroll global */}
-      <body className="flex h-screen bg-white text-black overflow-hidden">
+      <body className="flex h-screen bg-white text-red-600 overflow-hidden">
         
         {/* On enveloppe toute l'application avec le "Cerveau" (GameProvider) */}
         <GameProvider>
@@ -24,42 +24,42 @@ export default function RootLayout({ children }) {
           {/* --- MENU LATÉRAL (ASIDE) --- */}
           <aside className="w-64 bg-gray-900 border-l border-gray-800 flex flex-col p-6 shadow-xl z-10 shrink-0">
             <div className="mb-8">
-              <h2 className="text-xl font-bold text-blue-400 mb-2">Arcade Zone</h2>
+              <h2 className="text-xl font-bold text-red-600 mb-2">Arcade Zone</h2>
               <div className="h-1 w-10 bg-blue-500 rounded"></div>
             </div>
             
             <nav className="flex flex-col gap-4">
               <Link 
                 href="/" 
-                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-gray-300 hover:text-white"
+                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-red-600 hover:text-red-800"
               >
                 🏠 <span className="font-medium">Home</span>
               </Link>
               
               <Link 
                 href="/tetris" 
-                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-gray-300 hover:text-white"
+                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-red-600 hover:text-red-800"
               >
                 🎮 <span className="font-medium">Tetris</span>
               </Link>
 
               <Link 
                 href="/pacman" 
-                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-gray-300 hover:text-white"
+                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-red-600 hover:text-red-800"
               >
                 👻 <span className="font-medium">Pac-Man</span>
               </Link>
 
               <Link 
                 href="/kart" 
-                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-gray-300 hover:text-white"
+                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-red-600 hover:text-red-800"
               >
                 🏎️ <span className="font-medium">Karting</span>
               </Link>
 
               <Link 
                 href="/space-invaders" 
-                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-gray-300 hover:text-white"
+                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-red-600 hover:text-red-800"
               >
                 👾 <span className="font-medium">Space Invaders</span>
               </Link>
@@ -70,13 +70,13 @@ export default function RootLayout({ children }) {
               {/* Lien vers la page Réglages */}
               <Link 
                 href="/settings" 
-                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-gray-400 hover:text-blue-400"
+                className="p-3 rounded-lg hover:bg-gray-800 transition-colors flex items-center gap-3 text-red-600 hover:text-red-800"
               >
                 ⚙️ <span className="font-medium">Réglages</span>
               </Link>
             </nav>
 
-            <div className="mt-auto pt-6 border-t border-gray-800 text-xs text-gray-500">
+            <div className="mt-auto pt-6 border-t border-gray-800 text-xs text-red-600">
               © 2025 Mon Projet Next.js
             </div>
           </aside>
