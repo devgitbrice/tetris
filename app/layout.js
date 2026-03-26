@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       {/* "h-screen" et "overflow-hidden" pour que l'app prenne toute la fenêtre sans scroll global */}
-      <body className="flex h-screen bg-gray-950 text-white overflow-hidden">
+      <body className="flex h-screen bg-white text-black overflow-hidden">
         
         {/* On enveloppe toute l'application avec le "Cerveau" (GameProvider) */}
         <GameProvider>
